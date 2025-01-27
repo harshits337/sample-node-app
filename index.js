@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
     res.status(200).send('Hello World!');
 })
 
+app.get('/ping', (req, res) => {
+    res.status(200).send('pong');
+})
+
 app.get('/healthy', (req, res) => {
     res.status(200).send('healthy');
 })
